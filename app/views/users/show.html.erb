@@ -1,0 +1,21 @@
+<h1>Hi</h1>
+
+<p>Account info </p>
+<ul>
+<%= @user.name %>
+<%= @user.email %>
+</ul>
+
+<%= link_to 'Edit your account', edit_user_path(@user)  %>
+
+<%= link_to 'Homepage', root_path %>
+
+<%= link_to 'Delete your account', @user, method: :delete, data: { confirm: 'Are you sure?'}  %>
+
+<%= link_to 'View cart', user_purchases_path(@user) %>
+
+
+
+
+
+

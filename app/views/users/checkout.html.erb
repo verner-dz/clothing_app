@@ -1,0 +1,9 @@
+<h1>Make a payment</h1>
+
+Your total is $<%= $total %> <!-- This should be an instance var -->
+<br>
+<br>
+Enter your card number <%= @user.name %>
+<br>
+<em>This is where form goes to pay...</em>
+<%= link_to 'Submit Payment', "/users/#{@user.id}/cart" %>

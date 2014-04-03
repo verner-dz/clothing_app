@@ -1,0 +1,25 @@
+<p>Here are all your purchases</p>
+
+<% $total = 0 %>
+
+
+<% @products.each do |product| %>
+  <div> Name:  <%= product.name %> </div>
+  <div> Price:  <%= product.price %> </div>
+  <div> <img src=" <%= product.img_url %>"> </div>
+  <div> Description: <%= product.description %> </div>
+  <div> Qty left until filled: <%= product.qty %> </div>
+  <div> <% amount = product.qty * product.price %>
+        Amount: <%= amount %> <br>
+        <br>
+       <% $total += amount %>
+<% end %>
+
+<br>
+
+Total Amount: <%= $total %>
+
+
+<%= link_to 'Checkout', "/users/#{@user.id}/checkout" %>
+
+

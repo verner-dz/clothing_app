@@ -1,0 +1,59 @@
+<!-- this code displays the supplier's info -->
+<!-- <p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @supplier.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @supplier.email %>
+</p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @supplier.password_digest %>
+</p> -->
+
+<%= link_to 'Edit your account', edit_supplier_path(@supplier) %>
+
+<%= link_to 'Delete your account', @supplier, method: :delete, data: { confirm: 'Are you sure?'} %>
+
+<%= link_to 'Add a product', new_supplier_product_path(@supplier) %>
+
+<%= link_to 'Logout', logout_path %>
+
+<%= link_to 'Homepage', root_path %>
+
+<p>Account info </p>
+<ul>
+<%= @supplier.name %>
+<%= @supplier.email %>
+</ul>
+
+
+<h2> Here are all your products</h2>
+
+  <% @supplier.products.each do |product| %>
+  <ul>
+
+    <%= button_to 'Edit product', edit_product_path(product), :method => :get%>
+
+     <%= link_to 'Delete product', product, method: :delete, data: { confirm: 'Are you sure?'} %>
+
+
+   <div>Name: <%= product.name %> </div>
+   <div> Qty: <%= product.qty %> </div>
+   <div> Price: <%= product.price %> </div>
+   <div> Image: <img src="<%= product.img_url %>"> </div>
+   <div> Description: <%= product.description %> </div>
+   </ul>
+  <% end %>
+
+
+
+
+
+
+

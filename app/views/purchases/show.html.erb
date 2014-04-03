@@ -1,0 +1,21 @@
+<h1>Make a payment</h1>
+
+Your total is $<%= $total %>
+<br>
+<br>
+Enter your card number <%= current_user.name %>
+<br>
+<%= form_tag("/users/#{current_user.id}/purchases/#{@purchase.id}/cart", method: "get") do %>
+<br>
+
+
+ <%= label_tag(:card_number) %>
+<%= text_field_tag(:card_number) %>
+
+<%= label_tag(:address) %>
+<%= text_field_tag(:address) %>
+
+
+<%= submit_tag("Pay") %>
+<% end %>
+

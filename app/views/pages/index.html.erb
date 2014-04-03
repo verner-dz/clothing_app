@@ -1,0 +1,38 @@
+<h1>Welcome to Common Fibers</h1>
+<% if current_user %>
+  <h2>Hello <%= current_user.name %> </h2>
+<% end %>
+
+<%= link_to("Supplier Login", login_path)  %>
+<%= link_to("User Login", login_path) %>
+<%= link_to("Create a new supplier account", new_supplier_path ) %>
+<%= link_to("Create a new user account", new_user_path) %>
+
+<% if current_user.class == User %>
+  <%= link_to 'My Account', user_path(current_user) %>
+  <% elsif current_user.class == Supplier %>
+  <%= link_to 'My Account', supplier_path(current_user) %>
+  <% end %>
+
+<!-- <a href="">Supplier Login</a>
+<a href="">User Login</a> -->
+
+<% if current_user %>
+<%= link_to 'Logout', logout_path %>
+<% end %>
+<br>
+<br>
+<% @products.each do |product| %>
+
+  <% if current_user.class == User  %>
+    <%= link_to "Purchase this item", product %>
+  <% end %>
+
+<ul>
+ <div> Name:  <%= product.name %> </div>
+  <div> Quantity: <%= product.qty %> </div>
+  <div> Price:  <%= product.price %> </div>
+  <div> <img src=" <%= product.img_url %>"> </div>
+  <div> Description: <%= product.description %> </div>
+</ul>
+  <% end %>

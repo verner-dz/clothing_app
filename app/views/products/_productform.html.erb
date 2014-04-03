@@ -1,0 +1,44 @@
+ <%= form_for([@supplier, @product]) do |f| %>
+
+
+ <div class="field">
+   <%= f.label :name %>
+   <%= f.text_field :name %>
+ </div>
+
+ <div class="field">
+  <%= f.label :qty %>
+  <%= f.number_field :qty %>
+ </div>
+
+ <div class ="field">
+   <%= f.label :price %>
+   <%= f.number_field :price %>
+ </div>
+
+ <div class="field">
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+ </div>
+
+ <div class="field">
+   <%= f.label :description %>
+   <%= f.text_field :description %>
+ </div>
+
+
+ <div class="actions">
+   <%= f.submit %>
+ </div>
+
+
+ <% end %>
+
+
+
+
+
+
+
+
+
