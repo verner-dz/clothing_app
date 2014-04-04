@@ -32,4 +32,4 @@ Backlog:
 - Every time a product is sold out, and suppliers update their inventory, it'll be created as a new object in the database. This is so that each product is assigned to their unique users until the inventory is sold out. 
 
 
-
+Heroku link: http://sheltered-woodland-9672.herokuapp.com/
