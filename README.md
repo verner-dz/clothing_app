@@ -1,13 +1,13 @@
 Common Fibers
 
 Summary:
-Did you know that there are only 2 manufacturers that make glasses? Or that there a handful of clothing manufacturers that sell to most of the high end brands?  
-Common Fibers is a site where these suppliers can sell high end fashion merchandise directly to consumers in bulk. No more middle men (brands) charging 100x more just for slapping their logo on those items.
+I want to build a website for people to get Original Factory Manufactured clothes before branding on the cheap. Suppliers that sell on Alibaba also supply big brands but they sell the clothes in bulk without a brand logo. So this is what I was thinking the site could be like.
+1.	Think of it like a Kickstarter but you're funding a batch order of Shirts, pants, hats, sunglasses, etc...
+2.	Lets say the bulk order is $500 for 100 pairs of pre branded Banana Republic Chinos. You need 100 backers at $8 each to compensate shipping costs. Once the money is pledged, the order will be made in the sizes and colors requested when you pledged the money. When the order is received, the pants are packaged and sent out to you. 
+So you basically get a $60 pair of pants for $8.
+The orders would not be filled until enough money is pledged so you only pay if it reaches the goal.
+Advantages: Inexpensive and stylish clothes
 
-How it Works
-- Supplier posts an item with a specific quantity.
-- Consumers have to buy the whole inventory for the order to pass through.
-- Once the order passes through, consumers get their orders fulfilled and shipped to them directly.
 
 Link to erd: http://imgur.com/fcdkSNc
 
